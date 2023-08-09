@@ -1,5 +1,5 @@
 {
-	"name": "sigma-csv",
+	"name": "sigma-csv-node",
 	"description": "A javascript / Typescript library to be able to read and write csv files",
 	"homepage": "https://github.com/welpie21/sigma-csv",
 	"readme": "README.md",
