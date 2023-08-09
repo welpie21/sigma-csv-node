@@ -1,0 +1,51 @@
+{
+	"name": "sigma-csv",
+	"description": "A javascript / Typescript library to be able to read and write csv files",
+	"homepage": "https://github.com/welpie21/sigma-csv",
+	"readme": "README.md",
+	"docs": "https://github.com/welpie21/sigma-csv/blob/main/docs.md",
+	"version": "1.0.0",
+	"type": "module",
+	"license": "MIT",
+	"main": "./dist/sigma-csv.umd.cjs",
+	"module": "./dist/sigma-csv.js",
+	"types": "./dist/index.d.ts",
+	"bugs": {
+		"url": "https://github.com/welpie21/sigma-csv/issues"
+	},
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/welpie21/sigma-csv"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/sigma-csv.js",
+			"require": "./dist/sigma-csv.umd.js"
+		}
+	},
+	"author": {
+		"name": "Beau den Heijer",
+		"url": "https://github.com/welpie21"
+	},
+	"scripts": {
+		"build": "rm -rf dist && tsc && vite build && tsup ./lib/index.ts --dts --dts-only",
+		"test": "vitest",
+		"test:ui": "vitest --ui",
+		"prepublishOnly": "npm run test --run && npm run build"
+	},
+	"dependencies": {
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"@types/node": "^20.4.9",
+		"@vitest/ui": "^0.34.1",
+		"tsup": "7.2.0",
+		"typescript": "5.1.6",
+		"vite": "^4.4.9",
+		"vitest": "0.34.1"
+	}
+}
