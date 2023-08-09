@@ -1,9 +1,9 @@
 {
 	"name": "sigma-csv-node",
 	"description": "A javascript / Typescript library to be able to read and write csv files",
-	"homepage": "https://github.com/welpie21/sigma-csv",
+	"homepage": "https://github.com/welpie21/sigma-csv-node",
 	"readme": "README.md",
-	"docs": "https://github.com/welpie21/sigma-csv/blob/main/docs.md",
+	"docs": "https://github.com/welpie21/sigma-csv-node/blob/main/docs.md",
 	"version": "1.0.0",
 	"type": "module",
 	"license": "MIT",
@@ -11,14 +11,14 @@
 	"module": "./dist/sigma-csv.js",
 	"types": "./dist/index.d.ts",
 	"bugs": {
-		"url": "https://github.com/welpie21/sigma-csv/issues"
+		"url": "https://github.com/welpie21/sigma-csv-node/issues"
 	},
 	"files": [
 		"dist"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/welpie21/sigma-csv"
+		"url": "https://github.com/welpie21/sigma-csv-node"
 	},
 	"exports": {
 		".": {
